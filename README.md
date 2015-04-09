@@ -2,7 +2,7 @@
 Gives you shortcuts for accessing tickets from the address bar
 
 ## How to install
-* Download file JIRA.goto.ticket CRX file
+* Download the file JIRA.goto.ticket.vX.X.crx from the latest release
 * Open Chrome's extensions page (chrome://extensions/)
 * Drag and drop the CRX file to install
 
