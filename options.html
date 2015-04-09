@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JIRA ticket finder Options</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+        label { 
+            display: inline-block; 
+            width: 180px; 
+            text-align: left;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        #save {
+            width: 60px;
+            font-size: 12px;
+        }
+        #status {
+            color: darkgreen;
+        }
+        ​</style>
+</head>
+<body>
+
+<br><br>
+<label for="baseUrl">JIRA base url for tickets</label>
+<input id="baseUrl" type="text" value="" size="45"/>
+<br>
+
+<label for="defaultProject">JIRA default project</label>
+<input id="defaultProject" type="text" value="" />
+<br>
+
+<br>
+<button id="save">Save</button>
+<br><br>
+<div id="status"></div>
+
+<script src="options.js"></script>
+</body>
+</html>

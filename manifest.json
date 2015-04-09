@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "JIRA goto ticket",
+  "description": "This extension gives you shortcuts for accessing tickets from the address bar",
+  "version": "1.2",
+  "options_page": "options.html",
+  "omnibox": { 
+    "keyword" : "jira"
+  },
+  "icons": {
+    "16": "jira_icon_16x16.png",
+    "48": "jira_icon_48x48.png",
+    "128": "jira_icon_128x128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage"
+  ]
+}
