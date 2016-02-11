@@ -2,6 +2,7 @@
 function saveOptions() {
     var baseUrl = document.getElementById('baseUrl').value;
     var defaultProject = document.getElementById('defaultProject').value;
+    
     chrome.storage.sync.set({
         baseUrl: baseUrl,
         defaultProject: defaultProject.toUpperCase()
@@ -10,10 +11,11 @@ function saveOptions() {
         status.textContent = 'Options saved.';
         setTimeout(function() {
             status.textContent = '';
-        }, 750);
+        }, 1000);
     });
 }
 
+// This method restores the default options
 function restoreOptions() {
     chrome.storage.sync.get({
         baseUrl: 'https://teamcmp.atlassian.net/browse/',
